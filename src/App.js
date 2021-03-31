@@ -2,6 +2,8 @@ import "./App.css";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Items from "./components/Items";
+import Details from "./components/Details";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -26,11 +28,17 @@ function App() {
           </nav>
         </div>
         <Switch>
-          <Route exact path="/">
-            <Home />
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/blog/:id">
+            <Details />
           </Route>
           <Route path="/blog">
             <Items />
+          </Route>
+          <Route exact path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
