@@ -11,7 +11,9 @@ function App() {
       <div>
         <div className="navBar">
           <header>
-            <h1>My Life</h1>
+            <h1>
+              <Link to="/">GirlWhoCodes</Link>
+            </h1>
           </header>
           <nav>
             <ul>
@@ -28,14 +30,14 @@ function App() {
           </nav>
         </div>
         <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
           <Route path="/blog/:id">
             <Details />
           </Route>
           <Route path="/blog">
             <Items />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route exact path="/">
             <Home />

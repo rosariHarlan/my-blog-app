@@ -1,15 +1,22 @@
+import { useParams, Link } from "react-router-dom";
+import blogData from "../blogData";
+
 const Details = (props) => {
-  const { title, img, date, author, description } = props;
+  let { id } = useParams();
+  const index = blogData.find((x) => x.id === Number(id));
+
   return (
-    <div>
-      <p>&lt; back</p>
-      <img src={img} alt={title} />
+    <div className="details">
+      <p>
+        <Link to="/blog">&lt; back</Link>
+      </p>
+      <img src={index.img_url} alt={index.title} />
       <div>
-        <h3>{title}</h3>
-        <p>{date}</p>
+        <h3>{index.title}</h3>
+        <p>{index.published_date}</p>
       </div>
-      <p>{description}</p>
-      <p>{author}</p>
+      <p>{index.description}</p>
+      <p> By {index.author}</p>
     </div>
   );
 };

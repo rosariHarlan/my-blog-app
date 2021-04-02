@@ -54,6 +54,10 @@ a:hover {
           align-items: center;
 }
 
+.navBar header a:hover {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
   margin-right: 3em;
@@ -76,6 +80,8 @@ ul {
 .home img {
   width: 100%;
   height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home h2 {
@@ -83,13 +89,13 @@ ul {
   margin: 0 auto;
   font-size: 2.5em;
   font-weight: 600;
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 0.7em;
 }
 
 .home > div {
   margin-left: 32.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   width: 20%;
 }
 
@@ -131,6 +137,10 @@ ul {
 .gallery .grid-item div {
   margin-bottom: 1.3em;
   width: 35%;
+}
+
+.gallery .grid-item a:hover {
+  text-decoration: none;
 }
 
 input {
@@ -186,5 +196,57 @@ input[type="submit"] {
   margin-bottom: 1em;
   margin-top: 0.7em;
   font-size: 3em;
+}
+
+.details {
+  margin-left: 14em;
+}
+
+.details img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.details p {
+  font-weight: 600;
+}
+
+.details p:nth-of-type(2) {
+  font-weight: 400;
+  margin-left: 10em;
+  margin-bottom: 1em;
+  width: 65%;
+}
+
+.details p:first-of-type {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.details p:nth-of-type(3) {
+  margin-left: 10em;
+  margin-bottom: 1em;
+}
+
+.details > div {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10em;
+  margin-bottom: 1em;
+}
+
+.details > div h3 {
+  font-size: 2em;
 }
 /*# sourceMappingURL=App.css.map */
