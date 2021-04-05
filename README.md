@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- const Details = () => {
+  let { id } = useParams();
+  const index = blogData.find((x) => x.id === Number(id));
+  return (
+    <div>
+      <div className="details">
+        <p>
+          <Link to="/blog">&lt; back</Link>
+        </p>
+        <img src={index.img_url} alt={index.title} />
+        <div>
+          <h3>{index.title}</h3>
+          <p>{index.published_date}</p>
+        </div>
+        <p>{index.description}</p>
+        <p> By {index.author}</p>
+      </div>
+      <div className="comments">
+        <Comments />
+      </div>
+    </div>
+  );
+};
+
+export default Details; -->

@@ -186,14 +186,15 @@ input[type="submit"] {
 }
 
 .contact p {
-  margin-left: 20em;
-  margin-bottom: 3em;
+  margin-left: 16.5em;
+  margin-bottom: 2em;
   width: 35em;
+  font-size: 1.2em;
 }
 
 .contact h2 {
   margin-left: 6.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   margin-top: 0.7em;
   font-size: 3em;
 }

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Items from "./components/Items";
 import Details from "./components/Details";
 import Contact from "./components/Contact";
+import AddComment from "./components/AddComment";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/blog">
             <Items />
+          </Route>
+          <Route path="/comment">
+            <AddComment />
           </Route>
           <Route path="/contact">
             <Contact />

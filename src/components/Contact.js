@@ -1,11 +1,16 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Contact = () => {
   return (
     <div className="contact">
-      <h2>Contact</h2>
+      <h2>Contact Me</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
-        maximus, molestie est a, tempor magna.
+        I love meeting new people! Feel free to contact me or leave a comment!
       </p>
+      <div className="button">
+        <Link to="/comment">Add a Comment</Link>
+      </div>
       <form>
         <input type="text" name="name" id="name" placeholder="Name" />
         <input type="email" name="email" id="email" placeholder="Email" />
