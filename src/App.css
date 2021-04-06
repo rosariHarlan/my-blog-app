@@ -26,6 +26,7 @@ h1, .home h2, .contact h2 {
   padding: 12px 24px;
   font-size: 1em;
   font-weight: 600;
+  outline: none;
 }
 
 a {
@@ -249,5 +250,83 @@ input[type="submit"] {
 
 .details > div h3 {
   font-size: 2em;
+}
+
+.commentBox {
+  text-align: center;
+}
+
+.commentBox h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.commentBox input[name="name"] {
+  width: 20em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  outline: none;
+  padding-left: 0.8em;
+}
+
+.commentBox input[name="name"]::-webkit-input-placeholder {
+  padding-left: 0;
+}
+
+.commentBox input[name="name"]:-ms-input-placeholder {
+  padding-left: 0;
+}
+
+.commentBox input[name="name"]::-ms-input-placeholder {
+  padding-left: 0;
+}
+
+.commentBox input[name="name"]::placeholder {
+  padding-left: 0;
+}
+
+.commentBox textarea {
+  border: 2px solid #6fcf97;
+  font-family: "Exo 2", sans-serif;
+  border-radius: 10px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  outline: none;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.commentBox input[type="submit"] {
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  width: 17em;
+  text-align: center;
+}
+
+.newComment {
+  width: 20em;
+  height: 10vh;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0 4px 8px 0 #6fcf97, 0 6px 20px 0 rgba(111, 207, 151, 0.4);
+          box-shadow: 0 4px 8px 0 #6fcf97, 0 6px 20px 0 rgba(111, 207, 151, 0.4);
+}
+
+.newComment p {
+  padding-top: 0.3em;
+}
+
+.newComment p:nth-child(1) {
+  font-weight: 600;
+  text-align: left;
+  padding-left: 0.7em;
+}
+
+.newComment p:nth-child(2) {
+  text-align: left;
+  padding-left: 1.3em;
+  white-space: pre-wrap;
 }
 /*# sourceMappingURL=App.css.map */

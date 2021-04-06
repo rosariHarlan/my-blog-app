@@ -15,7 +15,7 @@ const NewComment = (props) => {
           name="comment"
           id="comment"
           cols="30"
-          rows="10"
+          rows="7"
           placeholder="Add Your Comment"
           value={newComment.comment || ""}
           onChange={handleChange}

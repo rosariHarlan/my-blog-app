@@ -1,9 +1,9 @@
 const CommentsList = (props) => {
   const { allComments } = props;
   return (
-    <div className="commentBox">
+    <div>
       {allComments.map(({ name, comment, id }) => (
-        <div key={id}>
+        <div className="newComment" key={id}>
           <p>{name}</p>
           <p>{comment}</p>
         </div>

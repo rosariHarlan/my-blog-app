@@ -6,11 +6,12 @@ const Contact = () => {
     <div className="contact">
       <h2>Contact Me</h2>
       <p>
-        I love meeting new people! Feel free to contact me or leave a comment!
+        I love meeting new people! Feel free to contact me or join the
+        discussion and leave a{" "}
+        <span>
+          <Link to="/comment">comment!</Link>
+        </span>
       </p>
-      <div className="button">
-        <Link to="/comment">Add a Comment</Link>
-      </div>
       <form>
         <input type="text" name="name" id="name" placeholder="Name" />
         <input type="email" name="email" id="email" placeholder="Email" />

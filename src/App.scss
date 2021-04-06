@@ -31,6 +31,7 @@ h1 {
   padding: 12px 24px;
   font-size: 1em;
   font-weight: 600;
+  outline: none;
 }
 
 a {
@@ -222,6 +223,66 @@ input[type="submit"] {
     margin-bottom: 1em;
     h3 {
       font-size: 2em;
+    }
+  }
+}
+
+// --- Comment box ---
+
+.commentBox {
+  text-align: center;
+  h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  input[name="name"] {
+    width: 20em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    outline: none;
+    padding-left: 0.8em;
+    &::placeholder {
+      padding-left: 0;
+    }
+  }
+  textarea {
+    border: 2px solid $btn-border;
+    font-family: "Exo 2", sans-serif;
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    outline: none;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+  input[type="submit"] {
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    width: 17em;
+    text-align: center;
+  }
+}
+
+.newComment {
+  width: 20em;
+  height: 10vh;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px 0 rgba(111, 207, 151, 1),
+    0 6px 20px 0 rgba(111, 207, 151, 0.4);
+  p {
+    padding-top: 0.3em;
+    &:nth-child(1) {
+      font-weight: 600;
+      text-align: left;
+      padding-left: 0.7em;
+    }
+    &:nth-child(2) {
+      text-align: left;
+      padding-left: 1.3em;
+      white-space: pre-wrap;
     }
   }
 }
