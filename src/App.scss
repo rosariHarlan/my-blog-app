@@ -32,6 +32,13 @@ h1 {
   font-size: 1em;
   font-weight: 600;
   outline: none;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    background-color: #f75f85;
+    border: none;
+    color: #fff;
+  }
 }
 
 a {
@@ -185,6 +192,10 @@ input[type="submit"] {
     margin-top: 0.7em;
     font-size: 3em;
   }
+  span {
+    font-weight: 600;
+    color: #f75f85;
+  }
 }
 
 // --- Details ---
@@ -193,7 +204,7 @@ input[type="submit"] {
   margin-left: 14em;
   img {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -211,7 +222,6 @@ input[type="submit"] {
     }
     &:nth-of-type(3) {
       margin-left: 10em;
-      margin-bottom: 1em;
     }
   }
   > div {
@@ -234,6 +244,7 @@ input[type="submit"] {
   h2 {
     margin-top: 1em;
     margin-bottom: 1em;
+    font-size: 2em;
   }
   input[name="name"] {
     width: 20em;
